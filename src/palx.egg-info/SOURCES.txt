@@ -1,4 +1,5 @@
 LICENSE
+README.MD
 pyproject.toml
 src/palx/__init__.py
 src/palx/main.py
