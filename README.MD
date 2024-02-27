@@ -1,6 +1,6 @@
-# PX: Image Palette Extractor 
+# palx: Image Palette Extractor 
 
-PX is a command-line tool and Python package that allows users to extract a color palette from an image and attach it to the image's edge. This tool is perfect for designers, artists, or anyone interested in color analysis and image manipulation.
+palx is a command-line tool and Python package that allows users to extract a color palette from an image and attach it to the image's edge. This tool is perfect for designers, artists, or anyone interested in color analysis and image manipulation.
 
 ## Features
 
@@ -10,17 +10,17 @@ PX is a command-line tool and Python package that allows users to extract a colo
 
 ## Installation
 
-To install PX, run the following command in your terminal:
+To install palx, run the following command in your terminal:
 
 ```bash
-pip install px
+pip install palx
 ```
 
 ## CLI Usage
 
-To use PX from the command line, follow this syntax:
+To use palx from the command line, follow this syntax:
 ```bash
-px <image_path> [--clusters <number_of_clusters>] [--position <position>] [--border_width <width>] [--output <output_path>]
+palx <image_path> [--clusters <number_of_clusters>] [--position <position>] [--border_width <width>] [--output <output_path>]
 ```
 
 * image_path: Path to the input image.
@@ -32,18 +32,18 @@ px <image_path> [--clusters <number_of_clusters>] [--position <position>] [--bor
 ### Example
 
 ```bash
-px myimage.jpg --clusters 8 --position bottom --border_width 5 --output myimage_with_palette.jpg
+palx myimage.jpg --clusters 8 --position bottom --border_width 5 --output myimage_with_palette.jpg
 ```
 
 This command extracts an 8-color palette from myimage.jpg, attaches it to the bottom with a border width of 5 pixels, and saves the result to myimage_with_palette.jpg.
 
 ## Python Package Usage
-PX can also be used as a Python package to integrate palette extraction and attachment into your own projects.
+palx can also be used as a Python package to integrate palette extraction and attachment into your own projects.
 
 ### Extracting a Palette and Edge Length
 
 ```python
-from px import extract_palette_and_edge_length
+from palx import extract_palette_and_edge_length
 
 palette, edge_length = extract_palette_and_edge_length("path/to/image.jpg", n_clusters=5)
 print(palette, edge_length)
@@ -52,7 +52,7 @@ print(palette, edge_length)
 ### Attaching the pallette to an image
 
 ```python
-from px import attach_palette
+from palx import attach_palette
 
 attach_palette("path/to/image.jpg", palette, "right", edge_length, border_width=10, border_color='black', output_path="path/to/output.jpg")
 ```
@@ -65,4 +65,4 @@ attach_palette("path/to/image.jpg", palette, "right", edge_length, border_width=
 * scikit-learn
 
 ## License
-PX is open-source software licensed under the MIT license.
+palx is open-source software licensed under the MIT license.
