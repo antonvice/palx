@@ -2,6 +2,11 @@
 
 palx is a command-line tool and Python package that allows users to extract a color palette from an image and attach it to the image's edge. This tool is perfect for designers, artists, or anyone interested in color analysis and image manipulation.
 
+<p align="center">
+  <img src="https://github.com/antonvice/palx/edit/master/test.png" alt="Test Image" width="400"/>
+  <img src="https://github.com/antonvice/palx/edit/master/output.png" alt="Output Image" width="400"/> 
+</p>
+
 ## Features
 
 - **Extract Color Palette**: Analyzes an image and extracts a dominant color palette.
